@@ -1,0 +1,23 @@
+.content1 {
+	background: url(../../images/mbanner.png) no-repeat center /100%;
+	width: 100%;
+
+	.cont1 {
+		width: 493px;
+		height: 340px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+
+		a {
+			display: block;
+			width: 141px;
+			height: 27px;
+			position: absolute;
+			left: 167px;
+			bottom: 63px;
+		}
+
+	}
+
+}

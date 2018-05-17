@@ -1,0 +1,16 @@
+@font-face {
+	font-family: "fonts";
+	src: url("../../fonts/fonts.eot"); /* IE9 */
+	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype");
+
+	url:("../../fonts/fonts.woff") format("woff"); /* chrome、firefox */
+	url:("../../fonts/fonts.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+
+	url:("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
+	font-style: normal;
+	font-weight: bold;
+}
+
+.content2{
+	background:url(../../images/m2.png);
+}
