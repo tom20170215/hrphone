@@ -1,16 +1,230 @@
 @font-face {
 	font-family: "fonts";
 	src: url("../../fonts/fonts.eot"); /* IE9 */
-	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype");
+	src: url("../../fonts/fonts.eot?#iefix") format("embedded-opentype"), url("../../fonts/fonts.woff") format("woff"), /* chrome、firefox */
+	url("../../fonts/fonts.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
 
-	url:("../../fonts/fonts.woff") format("woff"); /* chrome、firefox */
-	url:("../../fonts/fonts.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-
-	url:("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
+	url("../../fonts/fonts.svg#fonts") format("svg"); /* iOS 4.1- */
 	font-style: normal;
 	font-weight: bold;
 }
 
-.content2{
-	background:url(../../images/m2.png);
+.content2 {
+	background: url(../../images/m2.png) no-repeat 0 0/100%;
+	height:749px;
+	.comwidth {
+		width: 553px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+
+		button {
+			background: url(../../images/btn.png) no-repeat center;
+			width: 140px;
+			height: 71px;
+			margin: 163px 0 0 216px;
+		}
+
+		.type {
+			margin: 109px auto 0px;
+			width: 321px;
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				li {
+					position:relative;
+					overflow:hidden;
+					div.overlay {
+						position: absolute;
+						width: 65px;
+						height: 83px;
+						background:rgba(236,128,128,0.4);
+					}
+
+				}
+
+			}
+
+		}
+
+		p {
+			font: {
+				family: fonts;
+				size: 10px;
+				weight: bold;
+			}
+
+			text-align: center;
+			margin: 36px auto 29px;
+		}
+
+		.sword {
+			margin: 0 auto;
+			background: url(../../images/msword_init.png) no-repeat 40px 0/100%;
+			height: 143px;
+		}
+
+	}
+
+}
+
+.modal-dialog {
+	max-width: 580px !important;
+
+	.modal-content {
+		background: url(../../images/modalbg.png) no-repeat  0 0 /100%;
+		height: 345px;
+
+		.modal-header {
+			padding: 0px;
+			border: none;
+			display: block;
+
+			.close {
+				width: 19px;
+				height: 19px;
+				padding: 0px;
+				margin: 0px;
+				float: right;
+				background-color: transparent;
+			}
+
+		}
+
+		.modal-body {
+			width: 440px;
+			padding: 0;
+			flex-grow: 0;
+			top: 115px;
+			left: 68px;
+
+			ul {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.descbox {
+				margin: 20px;
+
+				p {
+					text-indent: 35px;
+
+					font: {
+						family: fonts;
+						size: 12px;
+						weight: bold;
+					}
+
+					;
+					line-height: 20px;
+				}
+
+			}
+
+			input {
+				border: none;
+				width: 311px;
+				height: 35px;
+				background: url(../../images/mborder.png) no-repeat center/100%;
+				text-align: center;
+				position: relative;
+				left: 50px;
+
+				font: {
+					family: fonts;
+					size: 25px;
+				}
+
+			}
+
+			input::-webkit-input-placeholder {
+				color: #BABABA;
+				font-weight: bold;
+			}
+
+			input::-moz-input-placeholder {
+				color: #BABABA;
+				font-weight: bold;
+			}
+
+			input::-ms-input-placeholder {
+				color: #BABABA;
+				font-weight: bold;
+			}
+
+			button {
+				font: {
+					family: fonts;
+					size: 10px;
+				}
+
+				;
+				position: relative;
+				left: 50px;
+				background: url(../../images/getcode.png) no-repeat center/100%;
+				width: 80px;
+				height: 34px;
+			}
+
+			label {
+				position: absolute;
+				color: #962626;
+
+				font: {
+					family: fonts;
+					size: 18px;
+				}
+
+			}
+
+			label.email {
+				top: 20px;
+				left: -58px;
+			}
+
+			label.code {
+				top: 70px;
+				left: -50px;
+			}
+
+		}
+
+		.modal-footer {
+			position: absolute;
+			bottom: 40px;
+			border: none;
+			padding: 0px;
+			left: 255px;
+
+			button {
+				width: 65px;
+				height: 33px;
+				background-color: transparent;
+
+				img {
+					width: 65px;
+					height: 33px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+#email {
+	.modal-dialog {
+		max-width: 580px !important;
+
+		.modal-content {
+			background: url(../../images/memailbg.png) no-repeat  0 0 /100%;
+		}
+
+	}
+
 }

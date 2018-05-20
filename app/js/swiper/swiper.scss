@@ -1,0 +1,84 @@
+@import 'node_modules/swiper/dist/css/swiper';
+
+.content3 {
+	margin: 0 auto;
+	background: url(../../images/3.png) no-repeat 0 0/100%;
+
+	.comwidth {
+		width: 553px;
+		margin: 0 auto;
+		height: 308px;
+		overflow: hidden;
+
+		.box {
+			width: 335px;
+			background: url(../../images/mswiperbg.png) no-repeat center/100%;
+			margin-top: 79px;
+
+			.swiper-container {
+				width: 235px;
+				height: 162px;
+				top: 21px;
+				left: 47px;
+				margin: 0;
+
+				img {
+					width: 235px;
+					height: 109px;
+				}
+
+				.swiper-pagination-bullets {
+					bottom: 6px;
+
+					span {
+						width: 15px;
+						height: 15px;
+						display: inline-block;
+						position: relative;
+						margin: 0 12px 0 0;
+
+						&:after {
+							content: "";
+							display: inline-block;
+							background: url(../../images/mcircle.png) center no-repeat;
+							width: 12px;
+							height: 3px;
+							position: absolute;
+							top: 5px;
+							left: 14px;
+						}
+
+						&:first-child:before {
+							content: "";
+							display: inline-block;
+							width: 12px;
+							height: 3px;
+							background: url(../../images/mcircle.png) center no-repeat;
+							position: absolute;
+							top: 5px;
+							left: -14px;
+						}
+
+						&:hover {
+							cursor: pointer;
+						}
+
+					}
+
+					.black {
+						background: url(../../images/noactive.png) no-repeat;
+					}
+
+					.red {
+						background: url(../../images/active.png) no-repeat;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

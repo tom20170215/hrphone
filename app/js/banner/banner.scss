@@ -3,19 +3,23 @@
 	width: 100%;
 
 	.cont1 {
-		width: 493px;
+		width: 553px;
 		height: 340px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
-
+		display:flex;
+		justify-content:center;
 		a {
 			display: block;
 			width: 141px;
 			height: 27px;
 			position: absolute;
-			left: 167px;
 			bottom: 63px;
+			img{
+				width:141px;
+				height:27px;
+			}
 		}
 
 	}

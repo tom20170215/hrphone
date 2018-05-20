@@ -80,7 +80,7 @@ module.exports = env => {
 					fallback: "style-loader"
 				})
 			}, {
-				test: /\.(jpg|svg|gif|png|ttf|svg|eot|)$/,
+				test: /\.(jpg|svg|gif|png|ttf|svg|eot|woff|)$/,
 				use: [{
 					loader: 'url-loader',
 					options: {

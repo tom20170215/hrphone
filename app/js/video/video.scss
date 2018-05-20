@@ -1,0 +1,38 @@
+.content4 {
+	background: url(../../images/mvideo_bg.png) 0 0 /100%;
+
+	.title {
+		img {
+			width: 640px;
+			height: 23px;
+		}
+
+	}
+
+	.videobox {
+		margin: 101px auto 0px;
+
+		.videolist {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center;
+			.videoitem {
+				width: 500px;
+				height: 274px;
+				position: relative;
+				background: url(../../images/mvideobox.png) no-repeat 0 0 /100%;
+				iframe{
+					position:absolute;
+					top:32px;
+					left:72px;
+					width:335px;
+					height:174px;
+				}
+			}
+
+		}
+
+	}
+
+}
