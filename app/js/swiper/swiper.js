@@ -6,7 +6,7 @@ export default{
 	tpl,
 	init:function(){
 		var myswiper = new Swiper('.swiper-container', {
-			autoplay: false,
+			autoplay: true,
 			loop: true,
 			pagination: {
 				el: '.swiper-pagination',

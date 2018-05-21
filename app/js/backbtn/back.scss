@@ -1,0 +1,23 @@
+span.bg {
+	width: 104px;
+	height: 86px;
+	display: none;
+	position: fixed;
+	bottom: 100px;
+	right: -30px;
+	background: url(../../images/backbtn.png) no-repeat center /100%;
+	z-index: 1;
+
+	span.back-to-top {
+		display: block;
+
+		a {
+			display:block;
+			width: 69px;
+			height: 48px;
+			margin-top:23px;
+		}
+
+	}
+
+}

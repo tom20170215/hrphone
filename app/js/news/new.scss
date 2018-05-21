@@ -1,0 +1,40 @@
+.content5 {
+	background: url(../../images/news.png) no-repeat center/100%;
+
+	.comwidth {
+		.title {
+			img {
+				width: 640px;
+				height: 32px;
+			}
+
+		}
+
+		.show {
+			background: url(../../images/fbshow.png) no-repeat center/100%;
+			display: flex;
+			justify-content: center;
+			width:405px;
+			height:524px;
+			margin:30px auto 0px;
+			position:relative;
+			.newbox{
+				width:333px;
+				height:391px;
+				position:absolute;
+				margin-top:112px;
+			}
+			// iframe {
+			// 	position: absolute;
+			// 	// top:116px;
+			// 	// left:39px;
+			// 	width:333px;
+			// 	height:391px;
+			// 	margin-top:112px;
+			// }
+
+		}
+
+	}
+
+}
