@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractSass = new ExtractTextPlugin({
-	filename: "css/[name][chunkhash:8].css",
+	filename: "[name][chunkhash:8].css",
 	disable: process.env.NODE_ENV === "development"
 });
 
@@ -18,7 +18,7 @@ module.exports = env => {
 			template: './app/views/index.html',
 			filename: 'index.html',
 			inject: true,
-			chunks: ['main','viewport'],
+			chunks: ['main','viewport','device'],
 			minify: {
 				removeAttributeQuotes: true, //移出属性的引号
 				collapseWhitespace: true,
@@ -43,7 +43,8 @@ module.exports = env => {
 		devtool:'inline-source-map',
 		entry: {
 			main: path.resolve(__dirname, 'app/js/main.js'),
-			viewport:path.resolve(__dirname,'app/js/viewport.js')
+			viewport:path.resolve(__dirname,'app/js/viewport.js'),
+			device:path.resolve(__dirname,'app/js/device.js')
 		},
 		output: {
 			filename: '[name].bundle.js',
@@ -68,6 +69,7 @@ module.exports = env => {
 				use: extractSass.extract({
 					use: [{
 						loader: "css-loader"
+			
 					}, {
 						loader:"px2rem-loader",
 						options:{
@@ -85,8 +87,7 @@ module.exports = env => {
 					loader: 'url-loader',
 					options: {
 						limit: 1024,
-						name: 'img/[name].[ext]',
-						publicPath: '../'
+						name: 'img/[name].[ext]'
 					}
 				}]
 			},{

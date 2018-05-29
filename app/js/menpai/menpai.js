@@ -73,50 +73,50 @@ const App = function() {
 		if (target.nodeName.toLocaleLowerCase() == 'img') {
 			switch (target.className) {
 				case "xuanshui":
-					if (target.getAttribute("src") == "../img/mitem1.png") {
-						target.setAttribute("src", "../img/mitem1red.png");
-						$(".qiyun").attr("src", "../img/mitem2.png");
-						$(".chilong").attr("src", "../img/mitem3.png");
-						$(".tianwei").attr("src", "../img/mitem4.png");
+					if (target.getAttribute("src") == "./img/mitem1.png") {
+						target.setAttribute("src", "./img/mitem1red.png");
+						$(".qiyun").attr("src", "./img/mitem2.png");
+						$(".chilong").attr("src", "./img/mitem3.png");
+						$(".tianwei").attr("src", "./img/mitem4.png");
 						type = 100;
 					} else {
-						target.setAttribute("src", "../img/item1.png");
+						target.setAttribute("src", "./img/mitem1.png");
 						type = 0;
 					}
 					break;
 				case "qiyun":
-					if (target.getAttribute("src") == "../img/mitem2.png") {
-						target.setAttribute("src", "../img/mitem2red.png");
-						$(".xuanshui").attr("src", "../img/mitem1.png");
-						$(".chilong").attr("src", "../img/mitem3.png");
-						$(".tianwei").attr("src", "../img/mitem4.png");
+					if (target.getAttribute("src") == "./img/mitem2.png") {
+						target.setAttribute("src", "./img/mitem2red.png");
+						$(".xuanshui").attr("src", "./img/mitem1.png");
+						$(".chilong").attr("src", "./img/mitem3.png");
+						$(".tianwei").attr("src", "./img/mitem4.png");
 						type = 200;
 					} else {
-						target.setAttribute("src", "../img/mitem2.png");
+						target.setAttribute("src", "./img/mitem2.png");
 						type = 0;
 					}
 					break;
 				case "chilong":
-					if (target.getAttribute("src") == "../img/mitem3.png") {
-						target.setAttribute("src", "../img/mitem3red.png");
-						$(".xuanshui").attr("src", "../img/mitem1.png");
-						$(".qiyun").attr("src", "../img/mitem2.png");
-						$(".tianwei").attr("src", "../img/mitem4.png");
+					if (target.getAttribute("src") == "./img/mitem3.png") {
+						target.setAttribute("src", "./img/mitem3red.png");
+						$(".xuanshui").attr("src", "./img/mitem1.png");
+						$(".qiyun").attr("src", "./img/mitem2.png");
+						$(".tianwei").attr("src", "./img/mitem4.png");
 						type = 300;
 					} else {
-						target.setAttribute("src", "../img/mitem3.png");
+						target.setAttribute("src", "./img/mitem3.png");
 						type = 0;
 					}
 					break;
 				case "tianwei":
-					if (target.getAttribute("src") == "../img/mitem4.png") {
-						target.setAttribute("src", "../img/mitem4red.png");
-						$(".xuanshui").attr("src", "../img/mitem1.png");
-						$(".qiyun").attr("src", "../img/mitem2.png");
-						$(".chilong").attr("src", "../img/mitem3.png");
+					if (target.getAttribute("src") == "./img/mitem4.png") {
+						target.setAttribute("src", "./img/mitem4red.png");
+						$(".xuanshui").attr("src", "./img/mitem1.png");
+						$(".qiyun").attr("src", "./img/mitem2.png");
+						$(".chilong").attr("src", "./img/mitem3.png");
 						type = 400;
 					} else {
-						target.setAttribute("src", "../img/mitem4.png");
+						target.setAttribute("src", "./img/mitem4.png");
 						type = 0;
 					}
 					break;
